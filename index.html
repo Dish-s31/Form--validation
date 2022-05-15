@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h2>REGISTRATION FORM</h2>
+        </div>
+        <form id="formmy" class="form" autocomplete="off">
+            <div class="form-control">
+                <label>Username</label>
+                <input type="text" id="username" placeholder="Enter your full name">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <!-- Small tag =>text appear one size smaller, browser's min font size > tag, same => setting font-size using css -->
+                <small>Error MSg</small>
+            </div>
+
+            <!-- Email -->
+
+            <div class="form-control">
+                <label>Email</label>
+                <input type="email" id="email" placeholder="Enter your email">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error MSg</small>
+            </div>
+
+            <!-- Contact -->
+
+            <div class="form-control">
+                <label>Phone Number</label>
+                <input type="number" id="phone" placeholder="Enter your contact number">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error MSg</small>
+            </div>
+
+            <!-- Password -->
+
+            <div class="form-control">
+                <label>Password</label>
+                <input type="password" id="password" placeholder="Enter your password">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error MSg</small>
+            </div>
+
+            <!-- Password check -->
+            <div class="form-control">
+                <label>Confirm Password</label>
+                <input type="password" id="cpassword" placeholder="Confirm your password">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error MSg</small>
+            </div>
+            <input type="submit" value="Submit" class="btn">
+        </form>
+    </div>
+
+
+    <!-- one question why eventlistener get null when using this tag in head section -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
